@@ -1,8 +1,11 @@
 package Assignment_02;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class ReservationSystem {
+
+    List<String> reservedSeats;
 
     public void runSystem() {
 
@@ -19,8 +22,8 @@ public class ReservationSystem {
     int choice = sc.nextInt();
     switch (choice) {
         case 1:
-
-//            SeatingChart seatingChart = new SeatingChart(List<String> reservedSeats);
+            SeatingChart seatingChart = new SeatingChart();
+            seatingChart.displaySeatingChart(reservedSeats);
             break;
         case 2:
             // Reserve a seat
@@ -33,7 +36,8 @@ public class ReservationSystem {
             break;
         default:
             System.out.println("Invalid choice");
-    }
+
+        }
     }
 
     public static void main(String[] args) {
