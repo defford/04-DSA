@@ -66,8 +66,6 @@ public class ReservationSystem {
                         returnToMenu();
                         break;
                     case 3:
-                        seatingChart.displaySeatingChart(reservedSeats);
-                        System.out.println();
                         boolean validCancelInput = false;
                         while (!validCancelInput) {
                             System.out.println("Your Reserved Seats:");
