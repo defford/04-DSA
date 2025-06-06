@@ -85,7 +85,7 @@ public class SingleLinkedListTest {
     public void deleteNode(int location){
         if (head == null) {
             System.out.println("SLL does not exist");
-        } else if (location >= size) {
+        } else if (location >= size || location < 0) {
             System.out.println("Invalid location");
         } else {
             if (location == 0) {
